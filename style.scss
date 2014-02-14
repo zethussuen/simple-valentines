@@ -71,7 +71,9 @@ html, body {
   input.copy {
     @include vertical-align;
     position: relative;
-    min-width: 50%;
+    width: 100%;
+    min-width: 280px;
+    max-width: 720px;
     color: #333;
     padding: 0.5em 0.5em;
     outline: none;
