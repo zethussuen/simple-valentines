@@ -5,6 +5,14 @@
     <title></title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+        <script type="text/javascript">
+      if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
+        var ieversion = new Number(RegExp.$1);
+        if (ieversion<=8) {
+          window.location.href = "haha.html";
+        }
+      }
+    </script>
   </head>
   <body>
     <div class="section" data-bg="#E57A8D" data-color="#FFFFFF" id="top">
