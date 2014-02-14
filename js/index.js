@@ -33,8 +33,7 @@ $(function() {
   });
 
   $('.calendar').click(function(){
-    var text = $('#s-ca h2').text().replace('.', "... until I turn on House of Cards...");
-    $('#s-ca h2').text(text);
+    $('#s-ca h2').text("Today, I'm all yours... until I turn on House of Cards");
   });
 
   $('.switch-outer').click(function(){
