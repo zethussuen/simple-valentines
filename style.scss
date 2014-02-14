@@ -38,6 +38,17 @@ body {
     }
   }
 
+
+  .info {
+    position: absolute;
+    top: 1em; left: 1em;
+    cursor: pointer;
+    width: 32px; height: 32px;
+    background-image: url('img/info.svg');
+    opacity: 0.5;
+    transition: all 0.33s ease-in;
+  }
+
   .close {
     @extend .share;
     width: 32px; height: 32px;
@@ -76,6 +87,14 @@ body {
       padding: 0 20px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    p {
+      line-height: 1.5;
     }
   }
 }
