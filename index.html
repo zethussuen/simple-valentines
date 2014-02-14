@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
     <div class="section" data-bg="#E57A8D" data-color="#FFFFFF" id="top">
@@ -16,7 +17,7 @@
     <div class="section" data-bg="#0f95ee" data-color="#FFFFFF" id="s-refresh">
       <div class="share"></div>
       <div class="message">
-        <img src="img/refresh.svg" alt="">
+        <img class="refresh" src="img/refresh.svg" alt="">
         <h2>Being with you is refreshing.</h2>
       </div>
       <div class="share-modal">
@@ -28,6 +29,9 @@
     <div class="section" data-bg="#7EC445" data-color="#FFFFFF" id="s-toggle">
       <div class="share"></div>
       <div class="message">
+        <div class="switch-outer">
+          <div class="switch-inner on"></div>
+        </div>
         <h2>You turn me on, baby.</h2>
       </div>
       <div class="share-modal">
@@ -51,7 +55,7 @@
     <div class="section" data-bg="#54aaf3" data-color="#FFFFFF" id="s-rt">
       <div class="share"></div>
       <div class="message">
-        <img src="img/69.svg" alt="">
+        <img class="dammit-ian" src="img/69.svg" width="260" alt="">
         <h2>Just for tonight...</h2>
       </div>
       <div class="share-modal">
@@ -63,7 +67,7 @@
     <div class="section" data-bg="#FFB52E" data-color="#FFFFFF" id="s-br">
       <div class="share"></div>
       <div class="message">
-        <img src="img/brightness.svg" alt="">
+        <img class="brightness" src="img/brightness.svg" alt="">
         <h2>You brighten my day.</h2>
       </div>
       <div class="share-modal">
@@ -87,12 +91,38 @@
     <div class="section" data-bg="#DE4C35" data-color="#FFFFFF" id="s-ca">
       <div class="share"></div>
       <div class="message">
-        <img src="img/calendar.svg" alt="">
+        <img class="calendar" src="img/calendar.svg" alt="">
         <h2>Today, I'm all yours.</h2>
       </div>
       <div class="share-modal">
         <div class="close"></div>
         <input type="text" class="copy" value="http://www.url.com/#s-ca">
+      </div>
+    </div>
+
+    <div class="section" data-bg="#FFFFFF" data-color="#0F98EC" id="s-search">
+      <svg class="share" width="42px" height="32px" viewBox="0 0 42 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+        <title>share</title>
+        <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+        <defs></defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <g id="Artboard-1" sketch:type="MSArtboardGroup" transform="translate(-20.000000, -2020.000000)" fill="#0F98EC">
+                <g id="Rectangle-1-+-Switch-+-You-turn-me-on,-baby-+-Path" sketch:type="MSLayerGroup" transform="translate(0.000000, 2000.000000)">
+                    <path d="M47.0374781,39.8351981 C44.3466966,42.3684994 48.3828689,46.1684513 51.0736505,43.63515 L61.1640813,34.1352701 C62.2786396,33.0859423 62.2786396,31.3846459 61.1640813,30.3353181 L51.0736505,20.8354382 C48.3828689,18.3021369 44.3466966,22.1020889 47.0374781,24.6353902 L50.419033,27.8190367 C41.6843202,25.7518582 32.3229589,29.291567 29.6146797,39.1458017 C29.5839269,39.2576975 28.9096098,41.2723186 30.0172707,41.7041525 C31.1249316,42.1359865 31.8332754,41.0716867 32.2589552,40.4415443 C34.5439213,37.0590631 43.0538922,34.0280283 50.2497104,36.8109644 L47.0374781,39.8351981 Z M42.7769967,21.8823529 L25.716204,21.8823529 C22.5592317,21.8823529 20,24.3983643 20,27.547252 L20,46.335101 C20,49.4637383 22.5645047,52 25.716204,52 L52.4656142,52 C55.6225865,52 58.1818182,49.4839886 58.1818182,46.335101 L58.1818182,41.6277526 L53.4467688,46.0856793 C52.9868015,46.3768156 52.7818276,46.8439218 51.589372,46.9176241 C51.5496853,46.920077 51.4139679,46.9191622 51.2108521,46.9151099 C51.1779345,46.9167903 27.0703451,46.9176413 27.0703451,46.9176413 C26.0192792,46.9176413 25.1545396,46.0772242 25.1545396,45.040517 L25.1545396,28.8418244 C25.1545396,27.8220531 26.0122749,26.9647001 27.0703451,26.9647001 L34.4565493,26.9647001 C36.9380694,25.3851144 39.7955894,24.3841198 42.8511796,24.0132038 C42.6884812,23.3067864 42.6665597,22.5859315 42.7769967,21.8823529 Z" id="Share" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+        </g>
+    </svg>
+      <div class="message">
+        <div class="search-box">
+          <img src="img/search.svg" alt="">
+          <div class="blink"></div>
+        </div>
+        <h2>I've been searching for you my whole life.</h2>
+      </div>
+      <div class="share-modal">
+        <div class="close"></div>
+        <input type="text" class="copy" value="http://www.url.com/#s-search">
       </div>
     </div>
 
