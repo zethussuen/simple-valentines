@@ -1,8 +1,14 @@
 $(function() {
 
+  var updateUrl = function(sct) {
+    var state = {};
+    history.pushState(state, "Simple Valentines", "#"+sct[0].id);
+  }
+
   $(document).scrollsnap({
     snaps: '.section',
     proximity: 300,
+    onSnap: updateUrl,
   });
 
   $('#heart').click(function() {
