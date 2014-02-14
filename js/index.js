@@ -5,6 +5,12 @@ $(function() {
     proximity: 300,
   });
 
+  $('#heart').click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s-refresh").offset().top
+    }, 400);
+  });
+
   $('.share, .info').click(function() {
     $(this).siblings('.share-modal').fadeIn().children('.copy').select();
   });

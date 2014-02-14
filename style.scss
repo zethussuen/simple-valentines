@@ -3,6 +3,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -23,7 +24,7 @@ html, body {
   min-height:100%;
   text-align: center;
   color: #ffffff;
-  // padding: 1em;
+  padding: 1em;
 
   .share {
     position: absolute;
@@ -101,6 +102,17 @@ html, body {
     p {
       line-height: 1.5;
     }
+  }
+}
+
+#heart {
+  transition: all 0.5s ease;
+  &:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2) translateY(-50%);
+    -moz-transform: scale(1.2) translateY(-50%);
+    transform: scale(1.2) translateY(-50%);
+    transition: all 0.5s ease;
   }
 }
 

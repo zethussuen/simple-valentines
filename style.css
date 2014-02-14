@@ -12,7 +12,8 @@ html, body {
   min-width: 100%;
   min-height: 100%;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  padding: 1em; }
   .section .share, .section .close {
     position: absolute;
     top: 1em;
@@ -54,6 +55,7 @@ html, body {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     transform: translateY(-50%);
     position: relative;
     width: 100%;
@@ -69,6 +71,7 @@ html, body {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%; }
     .section .message h2 {
@@ -82,6 +85,15 @@ html, body {
       color: #fff; }
     .section .message p {
       line-height: 1.5; }
+
+#heart {
+  transition: all 0.5s ease; }
+  #heart:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.2) translateY(-50%);
+    -moz-transform: scale(1.2) translateY(-50%);
+    transform: scale(1.2) translateY(-50%);
+    transition: all 0.5s ease; }
 
 .search-box {
   width: 100%;
