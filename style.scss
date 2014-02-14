@@ -12,25 +12,58 @@
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .section {
   height: 100vh;
   width: 100vw;
   text-align: center;
-  // background: #222;
-  content: attr(data-bg);
-  background-color: attr(data-bg);
   color: #ffffff;
   padding: 1em;
   position: relative;
 
   .share {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    text-decoration: none;
-    color: #fff;
+    top: 1em; left: 1em;
+    cursor: pointer;
+    width: 42px; height: 32px;
+    background-image: url('img/share.svg');
+    opacity: 0.5;
+    transition: all 0.33s ease-in;
+
+    &:hover {
+      opacity: 1;
+      transition: all 0.33s ease-in;
+    }
+  }
+
+  .close {
+    @extend .share;
+    width: 32px; height: 32px;
+    background-image: url('img/x.svg');
+    opacity: 1;
+  }
+
+  .share-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+  }
+
+  input.copy {
+    @include vertical-align;
+    width: 60%;
+    color: #333;
+    padding: 0.5em 0.5em;
+    outline: none;
+    font-size: 2em;
+    text-align: left;
+    border: 0;
   }
 
   .message {
@@ -42,4 +75,25 @@ body {
     }
   }
 }
+ 
+.picker {
+  width: 220px; height: 220px;
+  margin: 0 auto;
+  background: url('img/picker.png') no-repeat center center;
+}
 
+// FUCK YOU SVG EXPORTS
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  .picker {
+    background: url('img/picker@2x.png') no-repeat center center;
+    background-size: 100% 100%;
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .message {
+    h2 {
+      font-size: 1.5em !important;
+    }
+  }
+}
