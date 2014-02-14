@@ -1,5 +1,5 @@
 @mixin vertical-align {
-  position: relative;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -10,18 +10,24 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height:100%;
+  min-height:100%;
+}
+
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
 .section {
-  height: 100vh;
-  width: 100vw;
+  display:block;
+  position:relative;
+  min-width:100%;
+  min-height:100%;
   text-align: center;
   color: #ffffff;
-  padding: 1em;
-  position: relative;
+  // padding: 1em;
 
   .share {
     position: absolute;
@@ -68,18 +74,19 @@ body {
 
   input.copy {
     @include vertical-align;
-    width: 60%;
+    position: relative;
+    min-width: 50%;
     color: #333;
     padding: 0.5em 0.5em;
     outline: none;
     font-size: 2em;
-    text-align: left;
     border: 0;
   }
 
   .message {
     @include vertical-align;
-    
+    width: 100%;
+
     h2 {
       font-size: 3em;
       font-weight: bold;
