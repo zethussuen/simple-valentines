@@ -1,9 +1,9 @@
 $(function() {
 
-  $(document).scrollsnap({
-    snaps: '.section',
-    proximity: 300,
-  });
+  // $(document).scrollsnap({
+  //   snaps: '.section',
+  //   proximity: 300,
+  // });
 
   $('.share, .info').click(function() {
     $(this).siblings('.share-modal').fadeIn().children('.copy').select();
