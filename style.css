@@ -235,6 +235,14 @@ html, body {
   .picker {
     background: url("img/picker@2x.png") no-repeat center center;
     background-size: 100% 100%; } }
-@media only screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px) {
   .message h2 {
-    font-size: 1.5em !important; } }
+    font-size: 1.5em !important; }
+
+  .twitter-icon {
+    height: 20px;
+    width: 26px;
+    margin-top: 22px; }
+
+  .tweet {
+    font-size: 20px; } }

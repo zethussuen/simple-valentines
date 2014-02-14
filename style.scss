@@ -241,10 +241,12 @@ html, body {
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media screen and (max-width: 600px){
   .message {
     h2 {
       font-size: 1.5em !important;
     }
   }
+  .twitter-icon {height: 20px; width: 26px; margin-top: 22px;}
+  .tweet {font-size: 20px;}
 }
