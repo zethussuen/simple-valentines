@@ -5,7 +5,7 @@ $(function() {
     proximity: 300,
   });
 
-  $('.share').click(function() {
+  $('.share, .info').click(function() {
     $(this).siblings('.share-modal').fadeIn().children('.copy').select();
   });
 
