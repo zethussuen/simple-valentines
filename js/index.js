@@ -11,6 +11,12 @@ $(function() {
     }, 400);
   });
 
+  $('.top-arrow').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 800);
+  });
+
   $('.share, .info').click(function() {
     $(this).siblings('.share-modal').fadeIn().children('.copy').select();
   });
