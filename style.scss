@@ -176,6 +176,9 @@ html, body {
   width: 220px; height: 220px;
   margin: 0 auto;
   background: url('img/picker.png') no-repeat center center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .brightness, .calendar {
@@ -190,10 +193,10 @@ html, body {
     -moz-transition: all 0.33s ease-in;
     transition: all 0.33s ease-in;
   }
-  &:active {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    transform: scale(0.9);
+  &:active, &:focus {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
 

@@ -46,4 +46,9 @@ $(function() {
     $('#s-toggle').toggleClass('off');
   });
 
+  $('.picker').click(function(){
+    var colors = ["#d9392d", '#6ba1f5', '#5f6979', '#1fc370', '#2c4167', '#121821', '#b2281d', '#e67a8d', '#8c2c88', '#1c807d'];
+    $('#s-pc').css('background', colors[Math.floor((Math.random()*10))]);
+  })
+
 });

@@ -170,6 +170,8 @@ html, body {
   height: 220px;
   margin: 0 auto;
   background: url("img/picker.png") no-repeat center center; }
+  .picker:hover {
+    cursor: pointer; }
 
 .brightness, .calendar {
   cursor: pointer;
@@ -181,10 +183,10 @@ html, body {
     -webkit-transition: all 0.33s ease-in;
     -moz-transition: all 0.33s ease-in;
     transition: all 0.33s ease-in; }
-  .brightness:active, .calendar:active {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    transform: scale(0.9); }
+  .brightness:active, .brightness:focus, .calendar:active, .calendar:focus {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8); }
 
 .refresh {
   -webkit-animation: spin 2s ease infinite;
