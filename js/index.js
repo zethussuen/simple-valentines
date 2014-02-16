@@ -28,7 +28,13 @@ $(function() {
   });
 
   $('.close').click(function(){
-    $(this).parent('.share-modal').fadeOut().removeClass('fade');
+    $(this).parent('.share-modal').fadeOut();
+  });
+
+  $('.share-modal').click(function(e){
+    if (!$(e.target).is('a') && !$(e.target).is('input')){
+      $(this).fadeOut();
+    }
   });
 
   $('.section').each(function() {

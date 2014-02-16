@@ -13,7 +13,6 @@ html, body {
   min-height: 100%;
   text-align: center;
   color: #ffffff;
-  padding: 1em;
   overflow-x: hidden; }
   .section .share, .section .close {
     position: absolute;
